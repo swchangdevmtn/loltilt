@@ -92,20 +92,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="uiD-HE-4u6">
-                                <rect key="frame" x="20" y="64" width="240" height="128"/>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="uiD-HE-4u6">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="oax-56-G7A">
-                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="itemSize" width="360" height="188"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Mmx-N5-eSs">
-                                        <rect key="frame" x="0.0" y="64" width="50" height="50"/>
+                                        <rect key="frame" x="120" y="64" width="360" height="188"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="360" height="188"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
@@ -114,11 +114,35 @@
                             </collectionView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="uiD-HE-4u6" secondAttribute="trailing" id="HWp-fm-PXM"/>
+                            <constraint firstItem="uiD-HE-4u6" firstAttribute="top" secondItem="ojI-MW-qmS" secondAttribute="top" id="awB-R7-3aA"/>
+                            <constraint firstItem="uiD-HE-4u6" firstAttribute="bottom" secondItem="gKo-tB-vSA" secondAttribute="top" id="hJX-QX-i0K"/>
+                            <constraint firstItem="uiD-HE-4u6" firstAttribute="leading" secondItem="ojI-MW-qmS" secondAttribute="leading" id="nTh-wD-I77"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oUf-a8-397" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1743" y="312"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="prw-By-ZmB">
+            <objects>
+                <viewController id="BaO-mf-Wc2" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="34F-t9-v80"/>
+                        <viewControllerLayoutGuide type="bottom" id="sY3-XM-vTt"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="YsY-Qm-IGA">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tZc-Wx-JfF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2443" y="312"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="qvH-LI-zqi">
